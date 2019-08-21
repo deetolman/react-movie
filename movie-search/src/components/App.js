@@ -85,8 +85,8 @@ const App = () => {
         {loading && !errorMessage ? (
           <FadeLoader
           sizeUnit={"px"}
-          size={150}
-          color={'blue'}
+          size={300}
+          color={'white'}
         />
         ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
