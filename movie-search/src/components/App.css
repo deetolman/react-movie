@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo=swap');
+html *
+{
+   font-family: 'Heebo', sans-serif;
+}
+.App {
+  text-align: center;
+  background-color: #A7ACAD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.App-intro {
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.App-header h2 {
+  margin: 30px;
+}
+
+.add-movies {
+  text-align: center;
+}
+
+.add-movies button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 0 10px 30px 10px;
+}
+
+.movie {
+  padding: 5px 25px 10px 55px;
+  max-width: 25%;
+  font-size: 0.6em;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color:red;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  width: 100px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+.search > input[type="text"]{
+  text-align: center;
+  width: 50%;
+  min-width: 190px;
+}
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
+  }
+}
