@@ -78,7 +78,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header text="Welcome to Movie Search" />
+      <Header text="Welcome to Movie Search!" description={"Looking for a movie?"} />
       <Search search={search} />
       <p className="App-intro">Here are some popular movies</p>
       <div className="movies">
